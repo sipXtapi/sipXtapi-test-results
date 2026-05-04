@@ -1,0 +1,141 @@
+# Copyright (C) 2026 SIPez LLC.  All rights reserved.
+#
+# Regenerates per-branch test result dashboards from JSON summaries in
+# summaries/<branch>/<platform>/ and publishes the rendered HTML to the
+# gh-pages branch.
+
+name: Regenerate test result graphs
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'summaries/**'
+      - 'graph_test_results.py'
+      - '.github/workflows/regenerate-graphs.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: regenerate-graphs
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout main
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install plotly
+
+      - name: generate graphs per branch
+        run: |
+          mkdir -p build
+          LOG_DIR=/tmp/graph-logs
+          mkdir -p "$LOG_DIR"
+          FAILED_BRANCHES=""
+
+          if [ ! -d summaries ] || [ -z "$(ls -A summaries 2>/dev/null)" ]; then
+            echo "No summaries/ directory or it is empty; nothing to graph."
+            echo "FAILED_BRANCHES=" >> "$GITHUB_ENV"
+            exit 0
+          fi
+
+          for branch_dir in summaries/*/; do
+            branch=$(basename "$branch_dir")
+            echo "=== Generating graphs for branch: $branch ==="
+            if python3 graph_test_results.py \
+                 --input "$branch_dir" \
+                 --recursive \
+                 --output "build/$branch" \
+                 > "$LOG_DIR/$branch.log" 2>&1; then
+              echo "OK: $branch"
+              cat "$LOG_DIR/$branch.log"
+            else
+              echo "FAILED: $branch"
+              echo "--- $branch log tail ---"
+              tail -50 "$LOG_DIR/$branch.log"
+              echo "--- end log tail ---"
+              FAILED_BRANCHES="$FAILED_BRANCHES $branch"
+              rm -rf "build/$branch"
+            fi
+          done
+
+          echo "FAILED_BRANCHES=$FAILED_BRANCHES" >> "$GITHUB_ENV"
+
+      - name: generate top-level index
+        run: |
+          mkdir -p build
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          {
+            echo '<!DOCTYPE html>'
+            echo '<html><head><meta charset="us-ascii">'
+            echo '<title>sipXtapi test result dashboards</title>'
+            echo '<style>body{font-family:sans-serif;max-width:50em;margin:2em auto;padding:0 1em}</style>'
+            echo '</head><body>'
+            echo '<h1>sipXtapi test result dashboards</h1>'
+            echo "<p>Last regenerated: $TIMESTAMP</p>"
+            if ls -d build/*/ >/dev/null 2>&1; then
+              echo '<ul>'
+              for d in build/*/; do
+                branch=$(basename "$d")
+                echo "<li><a href=\"$branch/\">$branch</a></li>"
+              done
+              echo '</ul>'
+            else
+              echo '<p>No branches have generated graphs yet.</p>'
+            fi
+            echo '</body></html>'
+          } > build/index.html
+
+      - name: publish to gh-pages
+        run: |
+          mv build /tmp/build
+
+          git config user.name "sipXtapi CI"
+          git config user.email "ci@sipxtapi.org"
+
+          if git fetch origin gh-pages 2>/dev/null; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+
+          git rm -rf . 2>/dev/null || true
+          cp -r /tmp/build/. .
+
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "regenerate graphs $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin gh-pages
+          fi
+
+      - name: upload generation logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graph-generation-logs
+          path: /tmp/graph-logs/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: report failures
+        if: always()
+        run: |
+          if [ -n "$FAILED_BRANCHES" ]; then
+            echo "::error::Graph generation failed for branches:$FAILED_BRANCHES"
+            exit 1
+          fi
+          echo "All branches generated successfully."
