@@ -58,6 +58,7 @@ jobs:
                  --input "$branch_dir" \
                  --recursive \
                  --output "build/$branch" \
+                 --hide-hostname \
                  > "$LOG_DIR/$branch.log" 2>&1; then
               echo "OK: $branch"
               cat "$LOG_DIR/$branch.log"
