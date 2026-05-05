@@ -6,7 +6,7 @@
   "hostos": "Windows",
   "hostdistro": "Windows-2022Server-10.0.20348-SP0",
   "hostkernel": "2022Server",
-  "build_toolchain": "msvc-2022",
+  "build_toolchain": "msvc-2019",
   "branch": "win_device_changes",
   "commit": "592527d",
   "commit_full": "592527deab3932aca7427f889ba1017cfb2c2b98",
