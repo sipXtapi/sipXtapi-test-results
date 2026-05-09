@@ -1,0 +1,3133 @@
+{
+  "schema_version": 2,
+  "builddate": "20260509",
+  "buildtime": "0148",
+  "hostname": "runnervmrc6n4",
+  "hostarch": "x86_64",
+  "hostos": "Linux",
+  "hostdistro": "Ubuntu 22.04.5 LTS",
+  "hostkernel": "6.8.0-1044-azure",
+  "build_toolchain": "gcc-11.4.0",
+  "branch": "win_device_changes",
+  "commit": "f97789e",
+  "commit_full": "f97789ec45d0439f7a2e0582e8cf0e7b28c10ff8",
+  "dirty": true,
+  "dirty_files": [
+    "sipXmediaLib/contrib/libopus/libogg/config.h.in",
+    "sipXmediaLib/contrib/libopus/libogg/m4/ltoptions.m4",
+    "sipXmediaLib/contrib/libopus/libogg/m4/ltsugar.m4",
+    "sipXmediaLib/contrib/libopus/libogg/m4/ltversion.m4",
+    "sipXmediaLib/contrib/libopus/libogg/m4/lt~obsolete.m4",
+    "sipXmediaLib/contrib/libopus/libopusenc/config.h",
+    "sipXmediaLib/contrib/libopus/libopusenc/config.h.in",
+    "sipXmediaLib/contrib/libopus/libopusenc/m4/ltoptions.m4",
+    "sipXmediaLib/contrib/libopus/libopusenc/m4/ltsugar.m4",
+    "sipXmediaLib/contrib/libopus/libopusenc/m4/ltversion.m4",
+    "sipXmediaLib/contrib/libopus/libopusenc/m4/lt~obsolete.m4",
+    "sipXmediaLib/contrib/libopus/opus/m4/ltoptions.m4",
+    "sipXmediaLib/contrib/libopus/opus/m4/ltsugar.m4",
+    "sipXmediaLib/contrib/libopus/opus/m4/ltversion.m4",
+    "sipXmediaLib/contrib/libopus/opus/m4/lt~obsolete.m4",
+    "sipXmediaLib/contrib/libopus/opusfile/config.h.in",
+    "sipXmediaLib/contrib/libopus/opusfile/m4/ltoptions.m4",
+    "sipXmediaLib/contrib/libopus/opusfile/m4/ltsugar.m4",
+    "sipXmediaLib/contrib/libopus/opusfile/m4/ltversion.m4",
+    "sipXmediaLib/contrib/libopus/opusfile/m4/lt~obsolete.m4"
+  ],
+  "ci": true,
+  "run_id": "25587991689",
+  "annotation": "",
+  "projects": {
+    "sipXportLib": {
+      "testFailures": {
+        "OsDirTest::testCreateDir": 1,
+        "OsDirTest::testRemoveDir": 1,
+        "OsDirTest::testRenameDir": 1,
+        "OsFileIteratorTest::testCreation": 1,
+        "OsFileIteratorTest::testIterate": 1,
+        "OsFileSystemTest::testCreateDir": 1,
+        "OsFileSystemTest::testRemoveDir": 1,
+        "OsFileSystemTest::testCreateRecursiveDir": 1,
+        "OsFileSystemTest::testRenameDir": 1,
+        "OsFileSystemTest::testGetInfo": 1,
+        "OsFileSystemTest::testRemoveTree": 1,
+        "OsFileTest::testCreateFile": 1,
+        "OsFileTest::testDeleteFile": 1,
+        "OsFileTest::testReadWriteBuffer": 1,
+        "OsFileTest::testCopyFile": 1,
+        "OsFileTest::testReadOnly": 1,
+        "OsFileTest::testTouch": 1,
+        "OsFileTest::testFileLocking": 1,
+        "OsTimerTest::testPeriodicTimer_FractionalTime": 1,
+        "UtlStringTest_ConstructiveManipulators::testConstructor_4": 5,
+        "UtlStringTest_ConstructiveManipulators::testEfficientMemoryCopy": 2,
+        "UtlStringTest_DestructiveManipulators::testStrip_Default": 10,
+        "UtlStringTest_DestructiveManipulators::testStrip_TrailingSpaces_SpecifyStripType": 1
+      },
+      "testCounts": {
+        "OsAdapterInfoTest::testCount": [
+          2,
+          2
+        ],
+        "OsCallbackTest::testCallback": [
+          1,
+          1
+        ],
+        "OsConfigDbTest::testCreators": [
+          2,
+          2
+        ],
+        "OsConfigDbTest::testManipulators": [
+          15,
+          15
+        ],
+        "OsConfigDbTest::testUpdate": [
+          4,
+          4
+        ],
+        "OsConfigDbTest::testAccessors": [
+          8,
+          8
+        ],
+        "OsContactListTests::test": [
+          11,
+          11
+        ],
+        "OsContactTests::testConstructor": [
+          4,
+          4
+        ],
+        "OsContactTests::testCompareTo": [
+          6,
+          6
+        ],
+        "OsContactTests::testCompareTo_NonContact": [
+          1,
+          1
+        ],
+        "OsContactTests::testEquals": [
+          6,
+          6
+        ],
+        "OsContactTests::testEquals_NonContact": [
+          1,
+          1
+        ],
+        "OsContactTests::testGetContainableType": [
+          1,
+          1
+        ],
+        "OsDirTest::testCreateDir": [
+          4,
+          5
+        ],
+        "OsDirTest::testRemoveDir": [
+          6,
+          7
+        ],
+        "OsDirTest::testRenameDir": [
+          6,
+          7
+        ],
+        "OsEventTest::testTimedEvent": [
+          4,
+          4
+        ],
+        "OsEventTest::testThreadedEvent": [
+          338,
+          338
+        ],
+        "OsEventTest::testThreadedMultipleFire": [
+          141426,
+          141426
+        ],
+        "OsFileIteratorTest::testCreation": [
+          13,
+          14
+        ],
+        "OsFileIteratorTest::testIterate": [
+          35,
+          36
+        ],
+        "OsFileSystemTest::testCreateDir": [
+          4,
+          5
+        ],
+        "OsFileSystemTest::testRemoveDir": [
+          5,
+          6
+        ],
+        "OsFileSystemTest::testCreateRecursiveDir": [
+          4,
+          5
+        ],
+        "OsFileSystemTest::testRenameDir": [
+          6,
+          7
+        ],
+        "OsFileSystemTest::testGetInfo": [
+          5,
+          6
+        ],
+        "OsFileSystemTest::testRemoveTree": [
+          7,
+          8
+        ],
+        "OsFileTest::testCreateFile": [
+          3,
+          4
+        ],
+        "OsFileTest::testDeleteFile": [
+          5,
+          6
+        ],
+        "OsFileTest::testReadWriteBuffer": [
+          87,
+          88
+        ],
+        "OsFileTest::testCopyFile": [
+          11,
+          12
+        ],
+        "OsFileTest::testReadOnly": [
+          6,
+          7
+        ],
+        "OsFileTest::testTouch": [
+          9,
+          10
+        ],
+        "OsFileTest::testFileLocking": [
+          8,
+          9
+        ],
+        "OsLockTest::testLockBasicSemaphore": [
+          4,
+          4
+        ],
+        "OsLockTest::testLockMutex": [
+          18,
+          18
+        ],
+        "OsLockTest::testLockedMember": [
+          4,
+          4
+        ],
+        "OsMsgQTest::testMessageQueue": [
+          14,
+          14
+        ],
+        "OsMsgDispatcherTest::testSingleMessage": [
+          4,
+          4
+        ],
+        "OsMsgDispatcherTest::testFullDispatcher": [
+          402,
+          402
+        ],
+        "OsMutexTest::testMutex": [
+          6,
+          6
+        ],
+        "OsMutexTest::testRWMutex": [
+          6,
+          6
+        ],
+        "OsNameDbTest::testNameDb": [
+          12,
+          12
+        ],
+        "OsPathTest::testPathInfo": [
+          5,
+          5
+        ],
+        "OsProcessIteratorTest::testIterator": [
+          463,
+          463
+        ],
+        "OsProcessMgrTest::testManager": [
+          6,
+          6
+        ],
+        "OsProcessTest::testLaunch": [
+          5,
+          5
+        ],
+        "OsSemTest::testBasicSemaphore": [
+          6,
+          6
+        ],
+        "OsSemTest::testCountingSemaphore": [
+          6,
+          6
+        ],
+        "OsServerTaskTest::testFastStartStop": [
+          15,
+          15
+        ],
+        "OsSharedLibMgrTest::testLoadUnload": [
+          5,
+          5
+        ],
+        "SocketsTest::testSocketUtils": [
+          2,
+          2
+        ],
+        "SocketsTest::testWriteMsg": [
+          3,
+          3
+        ],
+        "SocketsTest::testWriteAndAcceptMsg": [
+          9,
+          9
+        ],
+        "SocketsTest::testMulticast": [
+          5,
+          5
+        ],
+        "OsTimerTaskTest::testTimerTask": [
+          2,
+          2
+        ],
+        "OsTimerTest::testImmediateTimer": [
+          4,
+          4
+        ],
+        "OsTimerTest::testOneShotAfter": [
+          20,
+          20
+        ],
+        "OsTimerTest::testTimerAccuracy": [
+          2,
+          2
+        ],
+        "OsTimerTest::testOneShotAt": [
+          4,
+          4
+        ],
+        "OsTimerTest::testStopTimerAfterOneShot": [
+          2,
+          2
+        ],
+        "OsTimerTest::testPeriodicTimer": [
+          3,
+          3
+        ],
+        "OsTimerTest::testOneshotPeriodicComboTimer": [
+          4,
+          4
+        ],
+        "OsTimerTest::testStopPeriodicTimer": [
+          6,
+          6
+        ],
+        "OsTimerTest::testPeriodicTimer_FractionalTime": [
+          2,
+          3
+        ],
+        "OsTimerTest::testDeleteTimerBeforeExpires": [
+          1,
+          1
+        ],
+        "OsTimerTest::testStartFire": [
+          3,
+          3
+        ],
+        "OsTimerTest::testStartStop": [
+          4,
+          4
+        ],
+        "OsTimerTest::testStartPeriodicStop": [
+          5,
+          5
+        ],
+        "OsTimerTest::testStartDelete": [
+          3,
+          3
+        ],
+        "OsTimerTest::testStartStopStartFire": [
+          5,
+          5
+        ],
+        "OsTimerTest::testStartStart": [
+          3,
+          3
+        ],
+        "OsTimerTest::testStartStopStop": [
+          4,
+          4
+        ],
+        "OsTimerTest::testStartFireStop": [
+          3,
+          3
+        ],
+        "OsTimerTest::testStop": [
+          2,
+          2
+        ],
+        "OsTimerTest::sanityVerificationOfTimeFunctions": [
+          0,
+          0
+        ],
+        "OsTimerTest::testDelayedStopMessage": [
+          2,
+          2
+        ],
+        "OsTimeTest::testSeconds": [
+          17,
+          17
+        ],
+        "OsTimeTest::testCopyConstructor": [
+          8,
+          8
+        ],
+        "CircularBufferTest::testWrite_WithZeroCapacity_BufferRemainsEmpty": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithOneItemOnEmptyBuffer_TheSizeBecomesOne": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithOneItemOnEmptyBuffer_TheItemIsInserted": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithTwoItemsOnEmptyBuffer_TheSizeBecomesTwo": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithTwoItemsOnEmptyBuffer_TheItemsAreInserted": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithTwoItemsOnBufferWithCapacityOne_TheSizeBecomesOne": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithTwoItemsOnBufferWithCapacityOne_TheBufferContainsOnlyTheSecondItem": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithThreeItemsOnBufferWithCapacityTwo_TheSizeBecomesTwo": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithThreeItemsOnBufferWithCapacityTwo_TheBufferContainsOnlyTheSecondAndThirdItems": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_WithTenItemsOnBufferWithCapacityTwo_TheBufferContainsOnlyTheLastTwoInsertedItems": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testExtract_OneItemOutOfAOneItemBuffer_TheBufferBecomesEmpty": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_OneItemAfterExtractingAll_TheBufferSizeBecomesOne": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testWrite_OneItemAfterExtractingAll_TheBufferContainsThatItem": [
+          2,
+          2
+        ],
+        "CircularBufferTest::testFill": [
+          2,
+          2
+        ],
+        "PluginHooksTest::testNoHooks": [
+          3,
+          3
+        ],
+        "PluginHooksTest::testOneHook": [
+          6,
+          6
+        ],
+        "PluginHooksTest::testReadConfig": [
+          11,
+          11
+        ],
+        "PluginHooksTest::testTwoInstances": [
+          14,
+          14
+        ],
+        "PluginHooksTest::testTwoHookTypes": [
+          12,
+          12
+        ],
+        "PluginHooksTest::testReconfigure": [
+          22,
+          22
+        ],
+        "UtlChainTest::testBefore": [
+          18,
+          18
+        ],
+        "UtlChainTest::testAfter": [
+          18,
+          18
+        ],
+        "UtlChainTest::testUnchainUnlinked": [
+          4,
+          4
+        ],
+        "UtlChainTest::testUnchainFirst": [
+          18,
+          18
+        ],
+        "UtlChainTest::testUnchainLast": [
+          18,
+          18
+        ],
+        "UtlChainTest::testUnchainMiddle": [
+          18,
+          18
+        ],
+        "UtlChainTest::testChainRing": [
+          42,
+          42
+        ],
+        "UtlChainTest::testListBefore": [
+          33,
+          33
+        ],
+        "UtlChainTest::testListAfter": [
+          33,
+          33
+        ],
+        "UtlCrc32Tests::testAll": [
+          6,
+          6
+        ],
+        "UtlDListTest::checkSanity_Append_Entries_And_At": [
+          8,
+          8
+        ],
+        "UtlDListTest::testAppend": [
+          7,
+          7
+        ],
+        "UtlDListTest::testInsert": [
+          7,
+          7
+        ],
+        "UtlDListTest::testInsertAt_EmptyList": [
+          6,
+          6
+        ],
+        "UtlDListTest::testInsertAt_NonEmptyList": [
+          12,
+          12
+        ],
+        "UtlDListTest::testFirst_And_Last": [
+          8,
+          8
+        ],
+        "UtlDListTest::testIndex": [
+          7,
+          7
+        ],
+        "UtlDListTest::testFind": [
+          7,
+          7
+        ],
+        "UtlDListTest::testContains": [
+          7,
+          7
+        ],
+        "UtlDListTest::testContainsReference": [
+          7,
+          7
+        ],
+        "UtlDListTest::testOccurancesOf": [
+          6,
+          6
+        ],
+        "UtlDListTest::testRemove": [
+          10,
+          10
+        ],
+        "UtlDListTest::testRemoveReference": [
+          10,
+          10
+        ],
+        "UtlDListTest::testRemoveAndDestroy": [
+          3,
+          3
+        ],
+        "UtlDListTest::testGet": [
+          8,
+          8
+        ],
+        "UtlDListTest::testIsEmpty": [
+          5,
+          5
+        ],
+        "UtlDListTest::testClear": [
+          5,
+          5
+        ],
+        "UtlDListTest::testClearAndDestroy": [
+          2,
+          2
+        ],
+        "UtlDListIteratorTests::testAdvancingOperator": [
+          9,
+          9
+        ],
+        "UtlDListIteratorTests::testFindNext": [
+          8,
+          8
+        ],
+        "UtlDListIteratorTests::testLast": [
+          8,
+          8
+        ],
+        "UtlDListIteratorTests::testInsertAfterPoint_EmptyList": [
+          2,
+          2
+        ],
+        "UtlDListIteratorTests::testInsertAfterPoint": [
+          9,
+          9
+        ],
+        "UtlHashBagTest::checkSanity_Insert_Entries_And_At": [
+          2,
+          2
+        ],
+        "UtlHashBagTest::testInsert": [
+          15,
+          15
+        ],
+        "UtlHashBagTest::testFind": [
+          7,
+          7
+        ],
+        "UtlHashBagTest::testContains": [
+          7,
+          7
+        ],
+        "UtlHashBagTest::testRemove": [
+          8,
+          8
+        ],
+        "UtlHashBagTest::testRemoveAndDestroy": [
+          7,
+          7
+        ],
+        "UtlHashBagTest::testIsEmpty": [
+          4,
+          4
+        ],
+        "UtlHashBagTest::testClear": [
+          6,
+          6
+        ],
+        "UtlHashBagTest::testClearAndDestroy": [
+          3,
+          3
+        ],
+        "UtlHashBagTest::testRemoveReference": [
+          47,
+          47
+        ],
+        "UtlHashBagTest::testOneThousandInserts": [
+          502500,
+          502500
+        ],
+        "UtlHashBagIteratorTests::testAdvancingOperator_And_KeyMethod": [
+          18,
+          18
+        ],
+        "UtlHashBagIteratorTests::testFiltered": [
+          12,
+          12
+        ],
+        "UtlHashBagIteratorTests::testCollision": [
+          6,
+          6
+        ],
+        "UtlHashMapTests::checkSanity_Insert_Entries_And_At": [
+          2,
+          2
+        ],
+        "UtlHashMapTests::testInsertKeyAndValue": [
+          28,
+          28
+        ],
+        "UtlHashMapTests::testInsert": [
+          9,
+          9
+        ],
+        "UtlHashMapTests::testFind": [
+          10,
+          10
+        ],
+        "UtlHashMapTests::testContains": [
+          5,
+          5
+        ],
+        "UtlHashMapTests::testRemove": [
+          8,
+          8
+        ],
+        "UtlHashMapTests::testRemoveKeyAndValue": [
+          12,
+          12
+        ],
+        "UtlHashMapTests::testRemoveAndDestroy": [
+          4,
+          4
+        ],
+        "UtlHashMapTests::testIsEmpty": [
+          4,
+          4
+        ],
+        "UtlHashMapTests::testClear": [
+          6,
+          6
+        ],
+        "UtlHashMapTests::testClearAndDestroy": [
+          2,
+          2
+        ],
+        "UtlHashMapTests::testCopyInto": [
+          5,
+          5
+        ],
+        "UtlHashMapTests::testRemoveCollision": [
+          46,
+          46
+        ],
+        "UtlHashMapTests::testOneThousandInserts": [
+          502500,
+          502500
+        ],
+        "UtlHashMapTests::testDeepCopy": [
+          23,
+          23
+        ],
+        "UtlHashMapIteratorTests::checkSanity_Insert_Entries_And_At": [
+          2,
+          2
+        ],
+        "UtlHashMapIteratorTests::testAdvancingOperator_And_KeyMethod": [
+          17,
+          17
+        ],
+        "UtlIntTests::testConstructor": [
+          6,
+          6
+        ],
+        "UtlIntTests::testCompareTo": [
+          13,
+          13
+        ],
+        "UtlIntTests::testCompareTo_NonInt": [
+          1,
+          1
+        ],
+        "UtlIntTests::testEquals": [
+          13,
+          13
+        ],
+        "UtlIntTests::testEquals_NonInteger": [
+          5,
+          5
+        ],
+        "UtlIntTests::testSetValue": [
+          50,
+          50
+        ],
+        "UtlIntTests::testGetContainableType": [
+          5,
+          5
+        ],
+        "UtlIntTests::testOperators": [
+          7,
+          7
+        ],
+        "UtlLinkTest::testLinkBefore": [
+          42,
+          42
+        ],
+        "UtlLinkTest::testListBefore": [
+          42,
+          42
+        ],
+        "UtlLinkTest::testLinkAfter": [
+          42,
+          42
+        ],
+        "UtlLinkTest::testListAfter": [
+          42,
+          42
+        ],
+        "UtlLinkTest::testLinkReuse": [
+          2001,
+          2001
+        ],
+        "UtlLongLongIntTests::testConstructor": [
+          6,
+          6
+        ],
+        "UtlLongLongIntTests::testCompareTo": [
+          13,
+          13
+        ],
+        "UtlLongLongIntTests::testCompareTo_NonIntll": [
+          1,
+          1
+        ],
+        "UtlLongLongIntTests::testEquals": [
+          13,
+          13
+        ],
+        "UtlLongLongIntTests::testEquals_NonIntll": [
+          5,
+          5
+        ],
+        "UtlLongLongIntTests::testSetValue": [
+          50,
+          50
+        ],
+        "UtlLongLongIntTests::testGetContainableType": [
+          5,
+          5
+        ],
+        "UtlLongLongIntTests::testOperators": [
+          5,
+          5
+        ],
+        "UtlRegExTest::testInput1": [
+          7,
+          7
+        ],
+        "UtlRegExTest::testMatchInfo": [
+          11,
+          11
+        ],
+        "UtlRegExTest::testUnMatchInfo": [
+          14,
+          14
+        ],
+        "UtlRegExTest::testMatchStart": [
+          5,
+          5
+        ],
+        "UtlRegExTest::testMatchUtlInfo": [
+          21,
+          21
+        ],
+        "UtlRegExTest::testMatchUtlLookAhead": [
+          6,
+          6
+        ],
+        "UtlRegExTest::testMatchAfter": [
+          3,
+          3
+        ],
+        "UtlRegExTest::testMatchUtlLookBehind": [
+          11,
+          11
+        ],
+        "UtlRegExTest::testCopy1": [
+          7,
+          7
+        ],
+        "UtlRegExTest::testRecursionLimit": [
+          2,
+          2
+        ],
+        "UtlSListTest::checkSanity_Append_Entries_And_At": [
+          15,
+          15
+        ],
+        "UtlSListTest::testAppend": [
+          14,
+          14
+        ],
+        "UtlSListTest::testInsert": [
+          14,
+          14
+        ],
+        "UtlSListTest::testInsertAt_EmptyList": [
+          13,
+          13
+        ],
+        "UtlSListTest::testInsertAt_NonEmptyList": [
+          19,
+          19
+        ],
+        "UtlSListTest::testFirst_And_Last": [
+          15,
+          15
+        ],
+        "UtlSListTest::testIndex": [
+          14,
+          14
+        ],
+        "UtlSListTest::testFind": [
+          14,
+          14
+        ],
+        "UtlSListTest::testContains": [
+          14,
+          14
+        ],
+        "UtlSListTest::testContainsReference": [
+          14,
+          14
+        ],
+        "UtlSListTest::testOccurancesOf": [
+          13,
+          13
+        ],
+        "UtlSListTest::testRemove": [
+          17,
+          17
+        ],
+        "UtlSListTest::testRemoveReference": [
+          17,
+          17
+        ],
+        "UtlSListTest::testRemoveAndDestroy": [
+          10,
+          10
+        ],
+        "UtlSListTest::testGet": [
+          15,
+          15
+        ],
+        "UtlSListTest::testIsEmpty": [
+          12,
+          12
+        ],
+        "UtlSListTest::testClear": [
+          12,
+          12
+        ],
+        "UtlSListTest::testClearAndDestroy": [
+          9,
+          9
+        ],
+        "UtlSListIteratorTest::testAdvancingOperator": [
+          9,
+          9
+        ],
+        "UtlSListIteratorTest::testFindNext": [
+          8,
+          8
+        ],
+        "UtlSListIteratorTest::testFindNextForDummies": [
+          11,
+          11
+        ],
+        "UtlSListIteratorTest::testLast": [
+          8,
+          8
+        ],
+        "UtlSListIteratorTest::testOffEnd": [
+          6,
+          6
+        ],
+        "UtlSListIteratorTest::testInsertAfterPoint_EmptyList": [
+          2,
+          2
+        ],
+        "UtlSListIteratorTest::testInsertAfterPoint": [
+          9,
+          9
+        ],
+        "UtlSortedListTest::checkSanity_Insert_Entries_And_At": [
+          11,
+          11
+        ],
+        "UtlSortedListTest::testInsert_StringList": [
+          11,
+          11
+        ],
+        "UtlSortedListTest::testInsert_IntList": [
+          11,
+          11
+        ],
+        "UtlSortedListTest::testInsert_MixedContainableObjects": [
+          1,
+          1
+        ],
+        "UtlSortedListTest::testInsert_LikeExistingItem": [
+          2,
+          2
+        ],
+        "UtlSortedListTest::testIndex": [
+          4,
+          4
+        ],
+        "UtlSortedListTest::testFind": [
+          5,
+          5
+        ],
+        "UtlSortedListTest::testContains": [
+          5,
+          5
+        ],
+        "UtlSortedListTest::testRemove": [
+          15,
+          15
+        ],
+        "UtlSortedListTest::testRemoveAt": [
+          15,
+          15
+        ],
+        "UtlSortedListTest::testDestroy": [
+          3,
+          3
+        ],
+        "UtlSortedListTest::testRemoveAll": [
+          4,
+          4
+        ],
+        "UtlSortedListTest::testDestroyAll": [
+          2,
+          2
+        ],
+        "UtlSortedListTest::testIsEmpty": [
+          4,
+          4
+        ],
+        "UtlSortedListIteratorTest::check_Advancing_Operator_StringList": [
+          5,
+          5
+        ],
+        "UtlSortedListIteratorTest::check_Advancing_Operator_IntList": [
+          5,
+          5
+        ],
+        "UtlSortedListIteratorTest::check_Reset": [
+          1,
+          1
+        ],
+        "UtlSortedListIteratorTest::check_FindNext": [
+          5,
+          5
+        ],
+        "UtlStringTest_ConstructiveManipulators::testConstructor_1": [
+          6,
+          6
+        ],
+        "UtlStringTest_ConstructiveManipulators::testConstructor_2": [
+          0,
+          0
+        ],
+        "UtlStringTest_ConstructiveManipulators::testConstructor_3": [
+          12,
+          12
+        ],
+        "UtlStringTest_ConstructiveManipulators::testConstructor_4": [
+          10,
+          15
+        ],
+        "UtlStringTest_ConstructiveManipulators::testCapacity": [
+          10,
+          10
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAssign_charstar": [
+          6,
+          6
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAssign_selfcharstar": [
+          6,
+          6
+        ],
+        "UtlStringTest_ConstructiveManipulators::testCharstarCastOperator": [
+          6,
+          6
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAssign_UtlString": [
+          18,
+          18
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppendWithInt": [
+          3,
+          3
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppendChar": [
+          2,
+          2
+        ],
+        "UtlStringTest_ConstructiveManipulators::testPlusEqualChar": [
+          3,
+          3
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_toEmptyString": [
+          12,
+          12
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_UtlString_toEmptyString": [
+          12,
+          12
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_specifyAllCharacters_toEmptyString": [
+          12,
+          12
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_toExistingString": [
+          74,
+          74
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_UtlString_toExistingString": [
+          74,
+          74
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_specifyAllCharacters_toExistingString": [
+          74,
+          74
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_specifiedSize_toEmptyString": [
+          12,
+          12
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_specifiedSize_toExistingString": [
+          50,
+          50
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_charstar_zero_bytes_toExistingString": [
+          36,
+          36
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppend_format": [
+          2,
+          2
+        ],
+        "UtlStringTest_ConstructiveManipulators::testAppendBinaryToString": [
+          1,
+          1
+        ],
+        "UtlStringTest_ConstructiveManipulators::testPlusEqual_charstar": [
+          72,
+          72
+        ],
+        "UtlStringTest_ConstructiveManipulators::testPlusEqual_UtlString": [
+          72,
+          72
+        ],
+        "UtlStringTest_ConstructiveManipulators::testPrepend": [
+          60,
+          60
+        ],
+        "UtlStringTest_ConstructiveManipulators::testInsert_AtFirstLocation": [
+          60,
+          60
+        ],
+        "UtlStringTest_ConstructiveManipulators::testInsert_AtMidLocation": [
+          6,
+          6
+        ],
+        "UtlStringTest_ConstructiveManipulators::testInsert_AtLastLocation": [
+          72,
+          72
+        ],
+        "UtlStringTest_ConstructiveManipulators::testInsert_AtVariousLocations": [
+          7,
+          7
+        ],
+        "UtlStringTest_ConstructiveManipulators::testReplace_zeroth_char": [
+          60,
+          60
+        ],
+        "UtlStringTest_ConstructiveManipulators::testReplace_last_char": [
+          72,
+          72
+        ],
+        "UtlStringTest_ConstructiveManipulators::testStringContainsNullNotAtEnd": [
+          13,
+          13
+        ],
+        "UtlStringTest_ConstructiveManipulators::testEfficientMemoryCopy": [
+          5,
+          7
+        ],
+        "UtlStringTest_ConstructiveManipulators::testSubstringAssign": [
+          2,
+          2
+        ],
+        "UtlStringTest_DestructiveManipulators::testReplace_Middle": [
+          10,
+          10
+        ],
+        "UtlStringTest_DestructiveManipulators::testReplace_Middle_SpecifyLengthAsSize": [
+          10,
+          10
+        ],
+        "UtlStringTest_DestructiveManipulators::testReplace_Middle_SpecifySize": [
+          10,
+          10
+        ],
+        "UtlStringTest_DestructiveManipulators::testReplaceAt": [
+          6,
+          6
+        ],
+        "UtlStringTest_DestructiveManipulators::testReplaceCharacter": [
+          16,
+          16
+        ],
+        "UtlStringTest_DestructiveManipulators::testStrip_Default": [
+          27,
+          37
+        ],
+        "UtlStringTest_DestructiveManipulators::testStrip_TrailingSpaces_SpecifyStripType": [
+          54,
+          55
+        ],
+        "UtlStringTest_DestructiveManipulators::testStrip_LeadingSpaces": [
+          54,
+          54
+        ],
+        "UtlStringTest_DestructiveManipulators::testStrip_AllSpaces": [
+          54,
+          54
+        ],
+        "UtlStringTest_DestructiveManipulators::testStrip_Characters": [
+          18,
+          18
+        ],
+        "UtlStringTest_DestructiveManipulators::testResize": [
+          10,
+          10
+        ],
+        "UtlStringTest_NonMutating::testSubstring": [
+          224,
+          224
+        ],
+        "UtlStringTest_NonMutating::testCompareTo_exactMatch": [
+          48,
+          48
+        ],
+        "UtlStringTest_NonMutating::testCompareTo_ignoreCase": [
+          20,
+          20
+        ],
+        "UtlStringTest_NonMutating::testIsEquals": [
+          6,
+          6
+        ],
+        "UtlStringTest_NonMutating::testEqualityOperator": [
+          20,
+          20
+        ],
+        "UtlStringTest_NonMutating::testEqualityOperator2": [
+          30,
+          30
+        ],
+        "UtlStringTest_NonMutating::testIndex_EmptyString": [
+          2,
+          2
+        ],
+        "UtlStringTest_NonMutating::testIndex_SearchFromStart": [
+          10,
+          10
+        ],
+        "UtlStringTest_NonMutating::testIndex_DontStartFromStart": [
+          10,
+          10
+        ],
+        "UtlStringTest_NonMutating::testIndex_CaseInsensitiveMatch": [
+          7,
+          7
+        ],
+        "UtlStringTest_NonMutating::testIndex_char_SearchFromStart": [
+          8,
+          8
+        ],
+        "UtlStringTest_NonMutating::testIndex_char_DontStartFromStart": [
+          4,
+          4
+        ],
+        "UtlStringTest_NonMutating::testFirst_char": [
+          4,
+          4
+        ],
+        "UtlStringTest_NonMutating::testFirst_charstar": [
+          5,
+          5
+        ],
+        "UtlStringTest_NonMutating::testContains_charstar": [
+          5,
+          5
+        ],
+        "UtlStringTest_NonMutating::testLast_char": [
+          7,
+          7
+        ],
+        "UtlStringTest_NonMutating::testLength": [
+          12,
+          12
+        ],
+        "UtlStringTest_NonMutating::testLength_NonNullTerminatedData": [
+          2,
+          2
+        ],
+        "UtlStringTest_NonMutating::testIsNull": [
+          5,
+          5
+        ],
+        "UtlStringTest_NonMutating::testLowerAndUpper": [
+          10,
+          10
+        ],
+        "UtlStringTest_NonMutating::testPlusOperator": [
+          108,
+          108
+        ],
+        "UtlStringTest_NonMutating::testIndexOperator": [
+          5,
+          5
+        ],
+        "UtlStringTest_NonMutating::testCharAtOperator": [
+          4,
+          4
+        ],
+        "UtlTokenizerTest::testBasic": [
+          8,
+          8
+        ],
+        "UtlTokenizerTest::testDelimsAtVariousPositions": [
+          26,
+          26
+        ],
+        "UtlVoidPtrTests::testConstructor": [
+          3,
+          3
+        ],
+        "UtlVoidPtrTests::testGetContainableType": [
+          1,
+          1
+        ],
+        "UtlVoidPtrTests::testIsEqual": [
+          3,
+          3
+        ],
+        "UtlVoidPtrTests::testSetValue": [
+          6,
+          6
+        ],
+        "XmlContentTest::testNamedEnt": [
+          11,
+          11
+        ],
+        "XmlContentTest::testNumericEnt": [
+          11,
+          11
+        ],
+        "XmlContentTest::testUnNamedEnt": [
+          11,
+          11
+        ],
+        "XmlContentTest::testUnNumericEnt": [
+          11,
+          11
+        ],
+        "XmlContentTest::testStringNoNewline": [
+          1,
+          1
+        ],
+        "XmlContentTest::testDecimal": [
+          6,
+          6
+        ]
+      },
+      "ran": 1153758,
+      "passed": 1153721,
+      "failed": 37,
+      "aborts": 0,
+      "hangs": 0
+    },
+    "sipXsdpLib": {
+      "testFailures": {},
+      "testCounts": {
+        "SdpCodecTest::testFmtpParsing": [
+          53,
+          53
+        ],
+        "SdpCodecTest::testH264SameTest": [
+          16,
+          16
+        ],
+        "SdpCodecTest::testMimeCase": [
+          6,
+          6
+        ],
+        "SdpCodecListTest::testAddGetCodec": [
+          12,
+          12
+        ],
+        "SdpCodecListTest::testH264Codecs": [
+          9,
+          9
+        ],
+        "SdpSetGetTest::testOriginatorInfo": [
+          6,
+          6
+        ],
+        "SdpSetGetTest::testSessionInfo": [
+          3,
+          3
+        ],
+        "SdpSetGetTest::testEmailAddrs": [
+          1,
+          1
+        ],
+        "SdpSetGetTest::testPhoneNumbers": [
+          1,
+          1
+        ],
+        "SdpSetGetTest::testBandwidth": [
+          7,
+          7
+        ],
+        "SdpSetGetTest::testTime": [
+          18,
+          18
+        ],
+        "SdpSetGetTest::testMisc": [
+          6,
+          6
+        ],
+        "SdpSetGetTest::testSdpGroup": [
+          7,
+          7
+        ],
+        "SdpSetGetTest::testLanguage": [
+          3,
+          3
+        ],
+        "SdpSetGetTest::testMediaLine": [
+          103,
+          103
+        ],
+        "SdpSetGetTest::testSdpToString": [
+          1,
+          1
+        ],
+        "SdpSetGetTest::testFoundationId": [
+          6,
+          6
+        ]
+      },
+      "ran": 258,
+      "passed": 258,
+      "failed": 0,
+      "aborts": 0,
+      "hangs": 0
+    },
+    "sipXtackLib": {
+      "testFailures": {
+        "HttpMessageTest::testNoHeaders": 2,
+        "SdpBodyTest::testH264CodecCandidate": 2,
+        "SdpBodyTest::testPtime": 2,
+        "SdpBodyTest::testGetCodecsInCommon": 1,
+        "SdpBodyTest::testGetCodecsInCommonFull": 6,
+        "SipMessageTest::testCompactNames": 1,
+        "SipSrvLookupTest::lookup": 2,
+        "SipSubscribeClientMgr::subscribeMwiClientTest": "hangs",
+        "SipUserAgentTest::testRefreshMgrTimeouts": "hangs",
+        "SipUserAgentTest::testShutdownBlocking": "hangs",
+        "SipUserAgentTest::testShutdownNonBlocking": "hangs",
+        "UrlTest::testBigUriScheme": 4
+      },
+      "testCounts": {
+        "SdpHelperTest::testHelper": [
+          6,
+          6
+        ],
+        "HttpBodyTest::testCreateMultipart": [
+          4,
+          4
+        ],
+        "HttpMessageTest::testCreator": [
+          4,
+          4
+        ],
+        "HttpMessageTest::testMessage": [
+          26,
+          26
+        ],
+        "HttpMessageTest::testHeader": [
+          44,
+          44
+        ],
+        "HttpMessageTest::testContentIndirection": [
+          35,
+          35
+        ],
+        "HttpMessageTest::testSdp": [
+          13,
+          13
+        ],
+        "HttpMessageTest::testMd5Digest": [
+          1,
+          1
+        ],
+        "HttpMessageTest::testEscape": [
+          3,
+          3
+        ],
+        "HttpMessageTest::testNoHeaders": [
+          0,
+          2
+        ],
+        "NameValuePairInsensitiveTest::testAccessors": [
+          5,
+          5
+        ],
+        "NameValuePairInsensitiveTest::testHash": [
+          2,
+          2
+        ],
+        "NameValuePairTest::testAccessors": [
+          5,
+          5
+        ],
+        "NetAttributeTokenizerTest::testManipulators": [
+          8,
+          8
+        ],
+        "NetBase64CodecTest::testIsValid": [
+          11,
+          11
+        ],
+        "NetBase64CodecTest::testDecodedSize": [
+          4,
+          4
+        ],
+        "NetBase64CodecTest::testChar2Char": [
+          8,
+          8
+        ],
+        "NetBase64CodecTest::testChar2Utl": [
+          4,
+          4
+        ],
+        "NetBase64CodecTest::testUtl2Utl": [
+          8,
+          8
+        ],
+        "NetBase64CodecTest::testBadDecodeSize": [
+          2,
+          2
+        ],
+        "NetBase64CodecTest::testBadDecode": [
+          2,
+          2
+        ],
+        "NetMd5CodecTest::testManipulators": [
+          2,
+          2
+        ],
+        "SdpBodyTest::testParser": [
+          3,
+          3
+        ],
+        "SdpBodyTest::testIndexAccessor": [
+          58,
+          58
+        ],
+        "SdpBodyTest::testNewMessage": [
+          6,
+          6
+        ],
+        "SdpBodyTest::testTimeHeaders": [
+          2,
+          2
+        ],
+        "SdpBodyTest::testGetMediaSetCount": [
+          3,
+          3
+        ],
+        "SdpBodyTest::testGetMediaAddress": [
+          24,
+          24
+        ],
+        "SdpBodyTest::testCandidateParsing": [
+          74,
+          74
+        ],
+        "SdpBodyTest::testRtcpPortParsing": [
+          14,
+          14
+        ],
+        "SdpBodyTest::testVideoCodecSelection": [
+          18,
+          18
+        ],
+        "SdpBodyTest::testH264CodecCandidate": [
+          26,
+          28
+        ],
+        "SdpBodyTest::testPtime": [
+          54,
+          56
+        ],
+        "SdpBodyTest::testGetCodecsInCommon": [
+          10,
+          11
+        ],
+        "SdpBodyTest::testDirectionAttribute": [
+          6,
+          6
+        ],
+        "SdpBodyTest::testUseRemotePayloadIds": [
+          13,
+          13
+        ],
+        "SdpBodyTest::testMlineOrder": [
+          19,
+          19
+        ],
+        "SdpBodyTest::testVideoInCommon1": [
+          12,
+          12
+        ],
+        "SdpBodyTest::testVideoInCommon2": [
+          17,
+          17
+        ],
+        "SdpBodyTest::testCryptoParser": [
+          16,
+          16
+        ],
+        "SdpBodyTest::test3Mlines": [
+          15,
+          15
+        ],
+        "SdpBodyTest::test5Mlines": [
+          41,
+          41
+        ],
+        "SdpBodyTest::testGetCodecsInCommonFull": [
+          644,
+          650
+        ],
+        "SipDialogEventTest::testDialogPackageParser": [
+          3,
+          3
+        ],
+        "SipDialogEventTest::testDialogPackageFromPolycom": [
+          3,
+          3
+        ],
+        "SipDialogMonitorTest::simpleTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::multipleMsgTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::multipleDialogTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::partialEventTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::implicitTerminationTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::emptyPartialTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::multipleSubscriptionTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::multipleSubscriptionFullTest": [
+          1,
+          1
+        ],
+        "SipDialogMonitorTest::unknownDialog": [
+          1,
+          1
+        ],
+        "SipDialogTest::createSubDialog": [
+          28,
+          28
+        ],
+        "SipDialogTest::subscribeNotifyTest": [
+          23,
+          23
+        ],
+        "SipMessageTest::testStrictRoute": [
+          2,
+          2
+        ],
+        "SipMessageTest::testGetVia": [
+          3,
+          3
+        ],
+        "SipMessageTest::testGetViaShort": [
+          3,
+          3
+        ],
+        "SipMessageTest::testGetAddrVia": [
+          3,
+          3
+        ],
+        "SipMessageTest::testGetNoBranchVia": [
+          3,
+          3
+        ],
+        "SipMessageTest::testGetViaPort": [
+          75,
+          75
+        ],
+        "SipMessageTest::testGetViaFieldSubField": [
+          12,
+          12
+        ],
+        "SipMessageTest::testGetEventField": [
+          28,
+          28
+        ],
+        "SipMessageTest::testGetToAddress": [
+          5,
+          5
+        ],
+        "SipMessageTest::testRemoveToTag": [
+          2,
+          2
+        ],
+        "SipMessageTest::testGetFromAddress": [
+          5,
+          5
+        ],
+        "SipMessageTest::testGetResponseSendAddress": [
+          15,
+          15
+        ],
+        "SipMessageTest::testParseAddressFromUriPort": [
+          5,
+          5
+        ],
+        "SipMessageTest::testProbPort": [
+          6,
+          6
+        ],
+        "SipMessageTest::testMultipartBody": [
+          2,
+          2
+        ],
+        "SipMessageTest::testCodecError": [
+          5,
+          5
+        ],
+        "SipMessageTest::testSdpParse": [
+          8,
+          8
+        ],
+        "SipMessageTest::testSdpShortHeaderNames": [
+          8,
+          8
+        ],
+        "SipMessageTest::testNonSdpSipMessage": [
+          7,
+          7
+        ],
+        "SipMessageTest::testSetInviteDataHeaders": [
+          18,
+          18
+        ],
+        "SipMessageTest::testSetInviteDataHeadersUnique": [
+          3,
+          3
+        ],
+        "SipMessageTest::testSetInviteDataHeadersForbidden": [
+          5,
+          5
+        ],
+        "SipMessageTest::testCompactNames": [
+          0,
+          1
+        ],
+        "SipMessageTest::testHeaderFieldAccessors": [
+          8,
+          8
+        ],
+        "SipMessageTest::testApplyTargetUriHeaderParams": [
+          35,
+          35
+        ],
+        "SipPresenceEventTest::testGetPresencePackage": [
+          2,
+          2
+        ],
+        "SipPresenceEventTest::testPresencePackageParser": [
+          2,
+          2
+        ],
+        "SipPublishContentMgrTest::testDefaultPublishContent": [
+          3,
+          3
+        ],
+        "SipPublishContentMgrTest::testDefaultConstructor": [
+          19,
+          19
+        ],
+        "SipPublishContentMgrTest::testPublishContent": [
+          6,
+          6
+        ],
+        "SipPublishContentMgrTest::testGetContent": [
+          7,
+          7
+        ],
+        "SipPublishContentMgrTest::testContentChangeObserver": [
+          7,
+          7
+        ],
+        "SipServerShutdownTest::testTcpShutdown": [
+          0,
+          0
+        ],
+        "SipSrvLookupTest::lookup": [
+          15,
+          17
+        ],
+        "SipSubscribeServerTest::subscriptionTest": [
+          54,
+          54
+        ],
+        "SipSubscribeClientMgr::subscribeMwiClientTest": [
+          0,
+          1
+        ],
+        "SipSubscriptionMgrTest::subscriptionTest": [
+          42,
+          42
+        ],
+        "SipUserAgentTest::testRefreshMgrTimeouts": [
+          0,
+          1
+        ],
+        "SipUserAgentTest::testShutdownBlocking": [
+          0,
+          1
+        ],
+        "SipUserAgentTest::testShutdownNonBlocking": [
+          0,
+          1
+        ],
+        "UrlTest::testFileBasic": [
+          6,
+          6
+        ],
+        "UrlTest::testSpecialChars": [
+          5,
+          5
+        ],
+        "UrlTest::testFileWithPortAndPath": [
+          7,
+          7
+        ],
+        "UrlTest::testHttpBasic": [
+          5,
+          5
+        ],
+        "UrlTest::testHttpWithPortAndPath": [
+          8,
+          8
+        ],
+        "UrlTest::testHttpWithQuery": [
+          10,
+          10
+        ],
+        "UrlTest::testHttpWithQueryNameAddr": [
+          3,
+          3
+        ],
+        "UrlTest::testHttpWithQueryAddrSpec": [
+          3,
+          3
+        ],
+        "UrlTest::testRtspBasic": [
+          6,
+          6
+        ],
+        "UrlTest::testRtspWithPort": [
+          6,
+          6
+        ],
+        "UrlTest::testSipBasic": [
+          6,
+          6
+        ],
+        "UrlTest::testSipBasicWithPort": [
+          6,
+          6
+        ],
+        "UrlTest::testIpBasicWithBrackets": [
+          8,
+          8
+        ],
+        "UrlTest::testSemiHeaderParam": [
+          7,
+          7
+        ],
+        "UrlTest::testSipAdvanced": [
+          8,
+          8
+        ],
+        "UrlTest::testSipComplexUser": [
+          7,
+          7
+        ],
+        "UrlTest::testLongHostname": [
+          7,
+          7
+        ],
+        "UrlTest::testSipParameters": [
+          13,
+          13
+        ],
+        "UrlTest::testFullSip": [
+          15,
+          15
+        ],
+        "UrlTest::testQuotedName": [
+          8,
+          8
+        ],
+        "UrlTest::testFancyNames": [
+          15,
+          15
+        ],
+        "UrlTest::testEncoded": [
+          10,
+          10
+        ],
+        "UrlTest::testNoFieldParams": [
+          9,
+          9
+        ],
+        "UrlTest::testNoHeaderParams": [
+          9,
+          9
+        ],
+        "UrlTest::testCorrection": [
+          2,
+          2
+        ],
+        "UrlTest::testIpAddressOnly": [
+          2,
+          2
+        ],
+        "UrlTest::testMissingAngles": [
+          3,
+          3
+        ],
+        "UrlTest::testNoAngleParam": [
+          5,
+          5
+        ],
+        "UrlTest::testHostAddressOnly": [
+          6,
+          6
+        ],
+        "UrlTest::testHostAndPort": [
+          5,
+          5
+        ],
+        "UrlTest::testIPv6Host": [
+          4,
+          4
+        ],
+        "UrlTest::testBogusPort": [
+          4,
+          4
+        ],
+        "UrlTest::testNoBracketUrlWithAllParamsWithVaryingSpace": [
+          10,
+          10
+        ],
+        "UrlTest::testConstruction": [
+          3,
+          3
+        ],
+        "UrlTest::testHttpConstruction": [
+          3,
+          3
+        ],
+        "UrlTest::testComplexConstruction": [
+          7,
+          7
+        ],
+        "UrlTest::testAddAttributesToExisting": [
+          7,
+          7
+        ],
+        "UrlTest::testChangeValues": [
+          11,
+          11
+        ],
+        "UrlTest::testRemoveAttributes": [
+          5,
+          5
+        ],
+        "UrlTest::testRemoveUrlParameterCase": [
+          6,
+          6
+        ],
+        "UrlTest::testRemoveFieldParameterCase": [
+          6,
+          6
+        ],
+        "UrlTest::testRemoveHeaderParameterCase": [
+          5,
+          5
+        ],
+        "UrlTest::testRemoveAllTypesOfAttributes": [
+          5,
+          5
+        ],
+        "UrlTest::testRemoveAngleBrackets": [
+          2,
+          2
+        ],
+        "UrlTest::testReset": [
+          2,
+          2
+        ],
+        "UrlTest::testAssignment": [
+          3,
+          3
+        ],
+        "UrlTest::testGetAllParameters": [
+          24,
+          24
+        ],
+        "UrlTest::testGetDuplicateNamedParameters": [
+          21,
+          21
+        ],
+        "UrlTest::testGetOnlyUrlParameters": [
+          11,
+          11
+        ],
+        "UrlTest::testGetOnlyHeaderParameters": [
+          11,
+          11
+        ],
+        "UrlTest::testGetOnlyFieldParameters": [
+          11,
+          11
+        ],
+        "UrlTest::testGetUrlParameterCase": [
+          15,
+          15
+        ],
+        "UrlTest::testGetFieldParameterCase": [
+          16,
+          16
+        ],
+        "UrlTest::testGetHeaderParameterCase": [
+          14,
+          14
+        ],
+        "UrlTest::testIsDigitString": [
+          6,
+          6
+        ],
+        "UrlTest::testIsUserHostPortEqualExact": [
+          2,
+          2
+        ],
+        "UrlTest::testIsUserHostPortVaryCapitalization": [
+          2,
+          2
+        ],
+        "UrlTest::testIsUserHostPortNoPort": [
+          3,
+          3
+        ],
+        "UrlTest::testIsUserHostPortNoMatch": [
+          2,
+          2
+        ],
+        "UrlTest::testIsUserHostPortPorts": [
+          53,
+          53
+        ],
+        "UrlTest::testToString": [
+          2,
+          2
+        ],
+        "UrlTest::testFromString": [
+          3,
+          3
+        ],
+        "UrlTest::testGetIdentity": [
+          11,
+          11
+        ],
+        "UrlTest::testNormalUri": [
+          1,
+          1
+        ],
+        "UrlTest::testBigUriDisplayName": [
+          5,
+          5
+        ],
+        "UrlTest::testBigUriQuotedName": [
+          5,
+          5
+        ],
+        "UrlTest::testBigUriScheme": [
+          3,
+          7
+        ],
+        "UrlTest::testBigUriUser": [
+          4,
+          4
+        ],
+        "UrlTest::testBigUriNoSchemeUser": [
+          4,
+          4
+        ],
+        "UrlTest::testBigUriHost": [
+          5,
+          5
+        ],
+        "XmlRpcTest::testXmlRpcRequestCreation": [
+          1,
+          1
+        ],
+        "XmlRpcTest::testXmlRpcRequestParse": [
+          4,
+          4
+        ],
+        "XmlRpcTest::testXmlRpcResponseParse": [
+          6,
+          6
+        ],
+        "XmlRpcTest::testXmlRpcResponseSetting": [
+          1,
+          1
+        ],
+        "XmlRpcTest::testIllFormattedXmlRpcRequest": [
+          6,
+          6
+        ]
+      },
+      "ran": 2326,
+      "passed": 2306,
+      "failed": 20,
+      "aborts": 0,
+      "hangs": 4
+    },
+    "sipXmediaLib": {
+      "testFailures": {
+        "MpCodecsPerformanceTest::testCodecsPreformance": 3,
+        "MpCodecsQualityTest::testEncodeDecodeToFile": "hangs",
+        "MprFromFileTest::testFileToneDetect": 16,
+        "MprNotchFilterTest::testToneNotchFilter": 16,
+        "MprRecorderTest::testRecordToFile": 4,
+        "MprRecorderTest::testRecordToFileAppendNotExisting": 4,
+        "MprRecorderTest::testRecordToFileAppend": 12,
+        "MprRecorderTest::testRecordChannelToFileAppend": 144,
+        "MprRecorderTest::testRecordToPauseResumeFile": 4,
+        "MpOutputDeviceDriverTest::testEnableDisable": 5,
+        "MpOutputDeviceDriverTest::testEnableDisableFast": 10,
+        "MpOutputDeviceDriverTest::testTickerNotification": "hangs",
+        "MpOutputDeviceDriverTest::testEnableAfterSwitchToMMTimer": 1,
+        "MpOutputDeviceDriverTest::testReEnableAfterFallbackDisable": 1,
+        "MpOutputDeviceDriverTest::testReEnableAfterFallbackDisableProducesAudio": 1,
+        "MpOutputDeviceDriverTest::measureJitter": 8,
+        "MpOutputDeviceManagerTest::testEnableDisable": 2,
+        "MpOutputDeviceManagerTest::testEnableDisableFast": 5,
+        "MpOutputDeviceManagerTest::testMixing": 6,
+        "MpMMTimerTest::testGetResolution": "hangs",
+        "MpMMTimerTest::testPeriodRange": "hangs",
+        "MpMMTimerTest::testLinearTimer": "hangs",
+        "MpMMTimerTest::testNotificationTimer": "hangs",
+        "WBInputOutputDeviceTest::testMixerWB": "aborts",
+        "WBInputOutputDeviceTest::testInputOutputWB": "aborts"
+      },
+      "testCounts": {
+        "MpAudioBufTest::testSampleCompare": [
+          11,
+          11
+        ],
+        "MpCodecsPerformanceTest::testCodecsPreformance": [
+          1703,
+          1706
+        ],
+        "MpCodecsQualityTest::testEncodeDecodeToFile": [
+          0,
+          1
+        ],
+        "MpMediaTaskTest::testCreators": [
+          15,
+          15
+        ],
+        "MpMediaTaskTest::testManagedAndUnmanagedFlowGraph": [
+          31,
+          31
+        ],
+        "MpMediaTaskTest::testDebugMode": [
+          11,
+          11
+        ],
+        "MpMediaTaskTest::testFocus": [
+          18,
+          18
+        ],
+        "MpMediaTaskTest::testStartAndStopFlowGraph": [
+          31,
+          31
+        ],
+        "MpMediaTaskTest::testTimeLimitAndTimeout": [
+          13,
+          13
+        ],
+        "MpMediaTaskTest::testMultipleManagedAndUnmanagedFlowgraph": [
+          18,
+          18
+        ],
+        "MpFlowGraphTest::testCreators": [
+          8,
+          8
+        ],
+        "MpFlowGraphTest::testLinkAndResource": [
+          9,
+          9
+        ],
+        "MpFlowGraphTest::testDestroyResources": [
+          4,
+          4
+        ],
+        "MpFlowGraphTest::testEnableDisable": [
+          7,
+          7
+        ],
+        "MpFlowGraphTest::testSamplesPerFrameAndSec": [
+          5,
+          5
+        ],
+        "MpFlowGraphTest::testStartAndStop": [
+          8,
+          8
+        ],
+        "MpFlowGraphTest::testAccessors": [
+          16,
+          16
+        ],
+        "MpFlowGraphTest::testProcessNextFrame": [
+          21,
+          21
+        ],
+        "MpFlowGraphTest::testNewResourceEnableDisableMsgFlow": [
+          12,
+          12
+        ],
+        "MpResourceTest::testCreators": [
+          15,
+          15
+        ],
+        "MpResourceTest::testGetFlowGraph": [
+          5,
+          5
+        ],
+        "MpResourceTest::testEnableAndDisable": [
+          13,
+          13
+        ],
+        "MpResourceTest::testDoProcessFrame": [
+          11,
+          11
+        ],
+        "MpResourceTest::testSetVisitState": [
+          3,
+          3
+        ],
+        "MpResourceTest::testMessageHandling": [
+          6,
+          6
+        ],
+        "MpResourceTest::testInputOutputInfoAndCounts": [
+          34,
+          34
+        ],
+        "MpResourceTest::testIsEnabled": [
+          5,
+          5
+        ],
+        "MpResourceTest::testIsInputOutputConnectedDisconnected": [
+          26,
+          26
+        ],
+        "MpResourceTest::testNewEnableAndDisable": [
+          13,
+          13
+        ],
+        "MpResourceTopologyTest::testValidators": [
+          24,
+          24
+        ],
+        "MprBridgeTest::testCreators": [
+          5,
+          5
+        ],
+        "MprBridgeTest::testDisabled": [
+          50,
+          50
+        ],
+        "MprBridgeTest::testEnabledNoData": [
+          51,
+          51
+        ],
+        "MprBridgeTest::testEnabledWithOneActiveInput": [
+          51,
+          51
+        ],
+        "MprBridgeTest::testEnabledWithManyActiveInputs": [
+          51,
+          51
+        ],
+        "MprBridgeTest::testSideBar": [
+          358,
+          358
+        ],
+        "MprBridgeTest::testMixNormalWeights": [
+          1763,
+          1763
+        ],
+        "MprBridgeTest::testSimpleMixPerformance": [
+          10047,
+          10047
+        ],
+        "MprBridgeTest::testWBCommonTests": [
+          66644,
+          66644
+        ],
+        "MprBridgeTestWB::bridgingTwoFreqsWB": [
+          168,
+          168
+        ],
+        "MprFromFileTest::testFileToneDetect": [
+          3252,
+          3268
+        ],
+        "MprFromFileTest::testBufferToneDetect": [
+          3268,
+          3268
+        ],
+        "MprFromMicTest::testCreators": [
+          5,
+          5
+        ],
+        "MprFromMicTest::testDisabled": [
+          28,
+          28
+        ],
+        "MprFromMicTest::testEnabledNoQueue": [
+          28,
+          28
+        ],
+        "MprFromMicTest::testEnabledEmptyQueue": [
+          29,
+          29
+        ],
+        "MprFromMicTest::testEnabledWithData": [
+          37,
+          37
+        ],
+        "MprMixerTest::testCreators": [
+          5,
+          5
+        ],
+        "MprMixerTest::testDisabled": [
+          29,
+          29
+        ],
+        "MprMixerTest::testMuted": [
+          27,
+          27
+        ],
+        "MprMixerTest::testEnabledNoData": [
+          27,
+          27
+        ],
+        "MprMixerTest::testEnabledWithOneWeight": [
+          31,
+          31
+        ],
+        "MprMixerTest::testEnabledWithManyWeights": [
+          27,
+          27
+        ],
+        "MprMixerTest::testWideband": [
+          128,
+          128
+        ],
+        "MprNotchFilterTest::testToneNotchFilter": [
+          4076,
+          4092
+        ],
+        "MprRecorderTest::testConvertPcmToOpusFile": [
+          143,
+          143
+        ],
+        "MprRecorderTest::testRecordToBadFile": [
+          28,
+          28
+        ],
+        "MprRecorderTest::testRecordToFile": [
+          13060,
+          13064
+        ],
+        "MprRecorderTest::testRecordToFileAppendNotExisting": [
+          13084,
+          13088
+        ],
+        "MprRecorderTest::testRecordToFileAppend": [
+          38436,
+          38448
+        ],
+        "MprRecorderTest::testRecordChannelToFileAppend": [
+          153692,
+          153836
+        ],
+        "MprRecorderTest::testRecordToPauseResumeFile": [
+          15796,
+          15800
+        ],
+        "MprSpeakerSelectorTest::testCreators": [
+          5,
+          5
+        ],
+        "MprSpeakerSelectorTest::testDisabled": [
+          35,
+          35
+        ],
+        "MprSpeakerSelectorTest::testEnabledNoData": [
+          35,
+          35
+        ],
+        "MprSpeakerSelectorTest::testEnabledWithData": [
+          110,
+          110
+        ],
+        "MprSplitterTest::testCreators": [
+          5,
+          5
+        ],
+        "MprSplitterTest::testDisabled": [
+          29,
+          29
+        ],
+        "MprSplitterTest::testEnabledNoData": [
+          25,
+          25
+        ],
+        "MprSplitterTest::testEnabledWithData": [
+          108,
+          108
+        ],
+        "MprToSpkrTest::testCreators": [
+          5,
+          5
+        ],
+        "MprToSpkrTest::testDisabled": [
+          28,
+          28
+        ],
+        "MprToSpkrTest::testEnabledNoQueue": [
+          28,
+          28
+        ],
+        "MprToSpkrTest::testEnabledNoData": [
+          26,
+          26
+        ],
+        "MprToSpkrTest::testEnabledWithData": [
+          28,
+          28
+        ],
+        "MprToSpkrTest::testEnabledFullQueue": [
+          30,
+          30
+        ],
+        "MprToneDetectTest::testToneDetectFile": [
+          2033,
+          2033
+        ],
+        "MprToneGenTest::testToneAuthenticity": [
+          3264,
+          3264
+        ],
+        "MpBufTest::testCreators": [
+          8,
+          8
+        ],
+        "MpBufTest::testAudioBuffersWriteData": [
+          60,
+          60
+        ],
+        "MpBufTest::testDataBuffersExchangeData": [
+          5,
+          5
+        ],
+        "MpBufTest::testDataBuffersAssignment": [
+          5,
+          5
+        ],
+        "MpBufTest::testTypesafeCasts": [
+          3,
+          3
+        ],
+        "MpBufTest::testCloningAllTypes": [
+          2,
+          2
+        ],
+        "MpBufTest::testCloningWithDataCheck": [
+          37,
+          37
+        ],
+        "MpBufTest::testRequestWrite": [
+          9,
+          9
+        ],
+        "MpOutputDeviceDriverTest::testCreate": [
+          5,
+          5
+        ],
+        "MpOutputDeviceDriverTest::testEnableDisable": [
+          8,
+          13
+        ],
+        "MpOutputDeviceDriverTest::testEnableDisableFast": [
+          13,
+          23
+        ],
+        "MpOutputDeviceDriverTest::testTickerNotification": [
+          0,
+          1
+        ],
+        "MpOutputDeviceDriverTest::testEnableAfterSwitchToMMTimer": [
+          2,
+          3
+        ],
+        "MpOutputDeviceDriverTest::testMultipleEnableDisableCyclesAfterFallback": [
+          2,
+          2
+        ],
+        "MpOutputDeviceDriverTest::testSwitchToMMTimerWhenDisabled": [
+          2,
+          2
+        ],
+        "MpOutputDeviceDriverTest::testPushFrameDuringFallback": [
+          2,
+          2
+        ],
+        "MpOutputDeviceDriverTest::testRedundantSwitchToMMTimer": [
+          2,
+          2
+        ],
+        "MpOutputDeviceDriverTest::testFallbackTimerProducesTicks": [
+          2,
+          2
+        ],
+        "MpOutputDeviceDriverTest::testReEnableAfterFallbackDisable": [
+          2,
+          3
+        ],
+        "MpOutputDeviceDriverTest::testReEnableAfterFallbackDisableProducesAudio": [
+          2,
+          3
+        ],
+        "MpOutputDeviceDriverTest::measureJitter": [
+          7,
+          15
+        ],
+        "MpOutputDeviceManagerTest::testCreate": [
+          2,
+          2
+        ],
+        "MpOutputDeviceManagerTest::testNonexistentDevice": [
+          17,
+          17
+        ],
+        "MpOutputDeviceManagerTest::testAddRemoveToManager": [
+          9,
+          9
+        ],
+        "MpOutputDeviceManagerTest::testEnableDisable": [
+          32,
+          34
+        ],
+        "MpOutputDeviceManagerTest::testEnableDisableFast": [
+          18,
+          23
+        ],
+        "MpOutputDeviceManagerTest::testMixing": [
+          12,
+          18
+        ],
+        "MpOutputDeviceManagerTest::testNotificationDispatchOnFallback": [
+          2,
+          2
+        ],
+        "MpOutputDeviceManagerTest::testMostRecentDispatcherWins": [
+          2,
+          2
+        ],
+        "MpOutputDeviceManagerTest::testDisableDeviceWhileInFallback": [
+          2,
+          2
+        ],
+        "MpMMTimerTest::testGetResolution": [
+          0,
+          1
+        ],
+        "MpMMTimerTest::testPeriodRange": [
+          0,
+          1
+        ],
+        "MpMMTimerTest::testLinearTimer": [
+          0,
+          1
+        ],
+        "MpMMTimerTest::testNotificationTimer": [
+          0,
+          1
+        ],
+        "WBInputOutputDeviceTest::testMixerWB": [
+          14,
+          17
+        ],
+        "WBInputOutputDeviceTest::testInputOutputWB": [
+          26,
+          30
+        ],
+        "RtcpParserTest::testBadPaddedPacket": [
+          10,
+          10
+        ]
+      },
+      "ran": 332840,
+      "passed": 332598,
+      "failed": 242,
+      "aborts": 2,
+      "hangs": 6
+    },
+    "sipXmediaAdapterLib": {
+      "testFailures": {
+        "CpPhoneMediaInterfaceTest::testTones": "hangs",
+        "CpPhoneMediaInterfaceTest::testOuroboros": "hangs",
+        "CpPhoneMediaInterfaceTest::testTwoTones": "hangs",
+        "CpPhoneMediaInterfaceTest::testPlayPauseResumeStop": "hangs",
+        "CpPhoneMediaInterfaceTest::testRecordPlayback": "hangs",
+        "CpPhoneMediaInterfaceTest::testConnectionNotifications": "hangs",
+        "CpPhoneMediaInterfaceTest::testCodecStreamQuality": "hangs",
+        "CpPhoneMediaInterfaceTest::testThreeGraphs": "hangs",
+        "CpPhoneMediaInterfaceTest::testStreamNotifications": "hangs",
+        "CpPhoneMediaInterfaceTest::testVoiceNotifications": "hangs"
+      },
+      "testCounts": {
+        "CpPhoneMediaInterfaceTest::printMediaInterfaceType": [
+          2,
+          2
+        ],
+        "CpPhoneMediaInterfaceTest::testSetCodecPath": [
+          2,
+          2
+        ],
+        "CpPhoneMediaInterfaceTest::testProperties": [
+          13,
+          13
+        ],
+        "CpPhoneMediaInterfaceTest::testTones": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testOuroboros": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testTwoTones": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testPlayPauseResumeStop": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testRecordPlayback": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testConnectionNotifications": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testCodecStreamQuality": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testThreeGraphs": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testStreamNotifications": [
+          0,
+          1
+        ],
+        "CpPhoneMediaInterfaceTest::testVoiceNotifications": [
+          0,
+          1
+        ]
+      },
+      "ran": 17,
+      "passed": 17,
+      "failed": 0,
+      "aborts": 0,
+      "hangs": 10
+    },
+    "sipXcallLib": {
+      "testFailures": {},
+      "testCounts": {
+        "CallManangerTest::testSimpleTeardown": [
+          0,
+          0
+        ],
+        "CallManangerTest::testGetNewCallId": [
+          9,
+          9
+        ]
+      },
+      "ran": 9,
+      "passed": 9,
+      "failed": 0,
+      "aborts": 0,
+      "hangs": 0
+    },
+    "sipXtapi": {
+      "testFailures": {
+        "sipXtapiTestSuite::testLines": "hangs",
+        "sipXtapiTestSuite::testLineAliases": "hangs",
+        "sipXtapiTestSuite::testCallMakeAPI": "hangs",
+        "sipXtapiTestSuite::testCallGetID": "hangs",
+        "sipXtapiTestSuite::testCallGetRemoteID": "hangs",
+        "sipXtapiTestSuite::testCallGetLocalID": "hangs",
+        "sipXtapiTestSuite::testCallCancel": "hangs",
+        "sipXtapiTestSuite::testCallBasic": "hangs",
+        "sipXtapiTestSuite::testCallBasic2": "hangs",
+        "sipXtapiTestSuite::testCallBasicTCP": "hangs",
+        "sipXtapiTestSuite::testCallBasicNoRtcp": "hangs",
+        "sipXtapiTestSuite::testCallRecord": "hangs",
+        "sipXtapiTestSuite::testCallRedirect": "hangs",
+        "sipXtapiTestSuite::testCallShutdown": "hangs",
+        "sipXtapiTestSuite::testSendInfo": "hangs",
+        "sipXtapiTestSuite::testSendInfoExternalTransport": "hangs",
+        "sipXtapiTestSuite::testSendInfoTimeout": "hangs",
+        "sipXtapiTestSuite::testSendInfoFailure": "hangs",
+        "sipXtapiTestSuite::testCallDestroyRinging": "hangs",
+        "sipXtapiTestSuite::testCallGetRemoteUserAgent": "hangs",
+        "sipXtapiTestSuite::testCallGetInviteHeader": "hangs",
+        "sipXtapiTestSuite::testCallHold": "hangs",
+        "sipXtapiTestSuite::testCallHoldTCP": "hangs",
+        "sipXtapiTestSuite::testCallHoldMultiple1": "hangs",
+        "sipXtapiTestSuite::testCallHoldMultiple2": "hangs",
+        "sipXtapiTestSuite::testCallHoldMultiple3": "hangs",
+        "sipXtapiTestSuite::testCallHoldMultiple4": "hangs",
+        "sipXtapiTestSuite::testCallHoldExceedingIdleTimeout": "hangs",
+        "sipXtapiTestSuite::testConfBasic1": "hangs",
+        "sipXtapiTestSuite::testConfBasic2": "hangs",
+        "sipXtapiTestSuite::testConfBasic3": "hangs",
+        "sipXtapiTestSuite::testConfBasic4": "hangs",
+        "sipXtapiTestSuite::testConfBasic5": "hangs",
+        "sipXtapiTestSuite::testConfBasic6": "hangs",
+        "sipXtapiTestSuite::testConferenceDisplayName": "hangs",
+        "sipXtapiTestSuite::testConferenceLegBusy": "hangs",
+        "sipXtapiTestSuite::testConfHoldIndividual": "hangs",
+        "sipXtapiTestSuite::testConfJoin": "hangs",
+        "sipXtapiTestSuite::testConfIncomingJoin": "hangs",
+        "sipXtapiTestSuite::testConfHoldNoBridge": "hangs",
+        "sipXtapiTestSuite::testConfHoldBridge": "hangs",
+        "sipXtapiTestSuite::testConfReAdd": "hangs",
+        "sipXtapiTestSuite::testReRegistration": "hangs",
+        "sipXtapiTestSuite::testBlindTransferSuccess": "hangs",
+        "sipXtapiTestSuite::testBlindTransferFailureBusy": "hangs",
+        "sipXtapiTestSuite::testTransferSuccess": "hangs",
+        "sipXtapiTestSuite::testTransferConferenceSuccess": "hangs",
+        "sipXtapiTestSuite::testChainedConfTransfer1": "hangs",
+        "sipXtapiTestSuite::testChainedConfTransfer2": "hangs",
+        "sipXtapiTestSuite::testChainedConfTransfer3": "hangs",
+        "sipXtapiTestSuite::testConfigEnableShortNames": "hangs",
+        "sipXtapiTestSuite::testReinitializeCall": "hangs",
+        "sipXtapiTestSuite::testConfigEnableStunSuccess": "hangs",
+        "sipXtapiTestSuite::testConfigEnableStunNoResponse": "hangs",
+        "sipXtapiTestSuite::testConfigEnableStunError": "hangs",
+        "sipXtapiTestSuite::testConfigEnableStunDelay": "hangs",
+        "sipXtapiTestSuite::testConfigStunKeepAlive": 18,
+        "sipXtapiTestSuite::testConfigStunKeepAliveOnce": 9
+      },
+      "testCounts": {
+        "sipXtapiTestSuite::testGainAPI": [
+          40,
+          40
+        ],
+        "sipXtapiTestSuite::testMuteAPI": [
+          544,
+          544
+        ],
+        "sipXtapiTestSuite::testLineAPI_Add": [
+          19,
+          19
+        ],
+        "sipXtapiTestSuite::testLineAPI_Remove": [
+          19,
+          19
+        ],
+        "sipXtapiTestSuite::testLineAPI_Credential": [
+          19,
+          19
+        ],
+        "sipXtapiTestSuite::testLineAPI_Get": [
+          40,
+          40
+        ],
+        "sipXtapiTestSuite::testLineAPI_GetURI": [
+          37,
+          37
+        ],
+        "sipXtapiTestSuite::testLines": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testLineEvents": [
+          22,
+          22
+        ],
+        "sipXtapiTestSuite::testLineAliases": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallMakeAPI": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallGetID": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallGetRemoteID": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallGetLocalID": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallCancel": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallBasic": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallBasic2": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallBasicTCP": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallBasicNoRtcp": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallRecord": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallRedirect": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallShutdown": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testSendInfo": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testSendInfoExternalTransport": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testSendInfoTimeout": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testSendInfoFailure": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallDestroyRinging": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallGetRemoteUserAgent": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallGetInviteHeader": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHold": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHoldTCP": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHoldMultiple1": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHoldMultiple2": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHoldMultiple3": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHoldMultiple4": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testCallHoldExceedingIdleTimeout": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfBasic1": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfBasic2": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfBasic3": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfBasic4": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfBasic5": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfBasic6": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConferenceDisplayName": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConferenceLegBusy": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfHoldIndividual": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfJoin": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfIncomingJoin": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfHoldNoBridge": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfHoldBridge": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfReAdd": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testRegistration": [
+          52,
+          52
+        ],
+        "sipXtapiTestSuite::testReRegistration": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testBadRegistrarRegistration": [
+          49,
+          49
+        ],
+        "sipXtapiTestSuite::testBlindTransferSuccess": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testBlindTransferFailureBusy": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testTransferSuccess": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testTransferConferenceSuccess": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testChainedConfTransfer1": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testChainedConfTransfer2": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testChainedConfTransfer3": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testGetVersion": [
+          13,
+          13
+        ],
+        "sipXtapiTestSuite::testSeqPortSelection": [
+          52,
+          52
+        ],
+        "sipXtapiTestSuite::testAutoPortSelection": [
+          34,
+          34
+        ],
+        "sipXtapiTestSuite::testSetCallback": [
+          7,
+          7
+        ],
+        "sipXtapiTestSuite::testConfigEnableShortNames": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testTeardown": [
+          4,
+          4
+        ],
+        "sipXtapiTestSuite::testReinitializeSimple": [
+          22,
+          22
+        ],
+        "sipXtapiTestSuite::testReinitializeCall": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testReinitializeLine": [
+          40,
+          40
+        ],
+        "sipXtapiTestSuite::testReinitializeConference": [
+          4,
+          4
+        ],
+        "sipXtapiTestSuite::testReinitializePub": [
+          4,
+          4
+        ],
+        "sipXtapiTestSuite::testReinitializeSub": [
+          4,
+          4
+        ],
+        "sipXtapiTestSuite::testConfigExternalTransport": [
+          13,
+          13
+        ],
+        "sipXtapiTestSuite::testConfigEnableStunSuccess": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfigEnableStunNoResponse": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfigEnableStunError": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfigEnableStunDropOdd": [
+          16,
+          16
+        ],
+        "sipXtapiTestSuite::testConfigEnableStunDropEven": [
+          16,
+          16
+        ],
+        "sipXtapiTestSuite::testConfigEnableStunDelay": [
+          0,
+          1
+        ],
+        "sipXtapiTestSuite::testConfigCrlfKeepAlive": [
+          22,
+          22
+        ],
+        "sipXtapiTestSuite::testConfigStunKeepAlive": [
+          19,
+          37
+        ],
+        "sipXtapiTestSuite::testConfigStunKeepAliveOnce": [
+          19,
+          28
+        ],
+        "sipXtapiTestSuite::testConfigKeepAliveNoStop": [
+          13,
+          13
+        ],
+        "sipXtapiTestSuite::testUtilUrlParse": [
+          11,
+          11
+        ],
+        "sipXtapiTestSuite::testUtilUrlUpdate": [
+          7,
+          7
+        ],
+        "sipXtapiTestSuite::testUtilUrlGetUrlParam": [
+          17,
+          17
+        ]
+      },
+      "ran": 1221,
+      "passed": 1194,
+      "failed": 27,
+      "aborts": 0,
+      "hangs": 60
+    }
+  }
+}
